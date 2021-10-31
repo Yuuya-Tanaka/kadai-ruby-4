@@ -39,40 +39,34 @@
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
         <div class="text-center mb-4">
-              <table>
+            <table>
                 <tbody>
-                  <tr>
-                    <th>会社</th> 
-                    <th><% name = params['company'].gsub(/\r\n|\r|\n/, "<br>") %></th>
-                    <th><%= name %></th>
-                  </tr>
-                 　
-                  <tr>
-                    <th>氏名</th>
-                    <th> <% name = params['name'].gsub(/\r\n|\r|\n/, "<br>") %></th>
-                    <th><%= name %></th>
-                　</tr>
-                   
-                　<tr>
-                    <th>メール</th>
-                    <th><% name = params['mail'].gsub(/\r\n|\r|\n/, "<br>") %></th>
-                    <th><%= name %></th>
-                  </tr>
-                  
-                  <tr>
-                    <th>電話番号</th>
-                    <th><% name = params['tel'].gsub(/\r\n|\r|\n/, "<br>") %></th>
-                    <th><%= name %></th>
-                  </tr>
-                
-                  <tr>
-                    <th>内容</th>
-                    <th><% name = params['content'].gsub(/\r\n|\r|\n/, "<br>") %></th>
-                    <th><%= name %></th>
-                  </tr>
-                  
+                    <tr>
+                        <th>会社</th> 
+                        <th><%= params['company'] %></th>
+                    </tr>
+                    
+                    <tr>
+                        <th>氏名</th>
+                        <th><%= params['name'] %></th>
+                    </tr>
+                       
+                    <tr>
+                        <th>メール</th>
+                        <th><%= params['mail'] %></th>
+                    </tr>
+                      
+                    <tr>
+                        <th>電話番号</th>
+                        <th><%= params['tel'] %></th>
+                    </tr>
+                    
+                    <tr>
+                        <th>内容</th>
+                        <th><%= params['content'].gsub(/\r\n|\r|\n/, "<br>") %></th>
+                    </tr>
                 </tbody>  
-              </table>
+            </table>
             <!-- 「戻る」ボタンを緑色にする設定を追加 -->
             <a href="/" class="btn btn-success">戻る</a>
         </div>
